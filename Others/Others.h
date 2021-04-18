@@ -1,12 +1,10 @@
 #pragma once
-
 #include <vector>
-#include <iostream>
 
 namespace Others
 {
-    using Array2D = std::vector<std::vector<T>>;
-    Array2D PrefixSumOfMatrix(Array2D& matrix);
+  std::vector<int> PrefixSumOf1DArray(const std::vector<int>& matrix);
+  std::vector<std::vector<int>> PrefixSumOf2DArray(const std::vector<std::vector<int>>& matrix);
 
-    void TestPrefixSumOfMatrix();
+  void TestPrefixSumOfMatrix();
 }
