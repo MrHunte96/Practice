@@ -1,9 +1,10 @@
 #pragma once
-#include "Others.h"
-#include "../PrintOverload.h"
+#include "Algorithms.h"
+#include "../Others/PrintOverload.h"
 
-namespace Others
-{  // Prefix sum of 2D Array/Martix
+namespace Algorithms
+{  
+  // Prefix sum of 2D Array/Martix
   // More information : https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/
   std::vector<int> PrefixSumOf1DArray(const std::vector<int>& arr)
   {

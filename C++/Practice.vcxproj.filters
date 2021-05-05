@@ -21,7 +21,10 @@
     <ClCompile Include="Others\PrefixSumOfMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PrintOverload.cpp">
+    <ClCompile Include="Algorithms\PrefixSumOfMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Others\PrintOverload.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +32,10 @@
     <ClInclude Include="Others\Others.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PrintOverload.h">
+    <ClInclude Include="Others\PrintOverload.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Algorithms.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

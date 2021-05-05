@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms\PrefixSumOfMatrix.cpp" />
+    <ClCompile Include="Others\PrintOverload.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Others\PrefixSumOfMatrix.cpp" />
-    <ClCompile Include="PrintOverload.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Others\Others.h" />
-    <ClInclude Include="PrintOverload.h" />
+    <ClInclude Include="Algorithms\Algorithms.h" />
+    <ClInclude Include="Others\PrintOverload.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
