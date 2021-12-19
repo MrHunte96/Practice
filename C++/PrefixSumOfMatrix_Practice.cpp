@@ -94,6 +94,10 @@ void Test3_Matrix()
 /********************************* Driver *************************************/
 int main()
 {
+    // Reset Color
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, 7);
+
     {
         StartTestCases("Prefix Sum of Array");
         Test0_Array();
@@ -107,5 +111,7 @@ int main()
         Test3_Matrix();
     }
 
+    // Reset Color
+    SetConsoleTextAttribute(hConsole, 7);
     return 0;
 }

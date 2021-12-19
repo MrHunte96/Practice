@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Helper.cpp" />
-    <ClCompile Include="PrefixSumOfMatrix.cpp" />
+    <ClCompile Include="ReverseWordsInString.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helper.h" />
