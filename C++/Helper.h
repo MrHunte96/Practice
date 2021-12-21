@@ -40,6 +40,7 @@ bool IsEqual(const T& val1, const T& val2)
 {
     return val1 == val2;
 }
+bool IsEqual(const char* val1, const char* val2);
 //template<>
 //bool IsEqual(const std::vector<int>& vec1, const std::vector<int>& vec2)
 //{

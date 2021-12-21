@@ -80,3 +80,18 @@ std::ostream& operator<<(std::ostream& os, const std::vector<std::vector<int>>& 
 
     return os;
 }
+
+/******************************************************************************/
+
+bool IsEqual(const char* val1, const char* val2)
+{
+    // strcmp
+    while (*val1)
+    {
+        if (*val1 != *val2)
+            return false;
+        val1++;
+        val2++;
+    }
+    return true;
+}

@@ -1,62 +1,15 @@
 #include "Helper.h"
-#include <sstream>
 
 // Reverse words in a string (No library allowed)
 char* ReverseWordsInString(const char* string)
 {
-    if (string == nullptr) return new char[1]{ '\0' };
-
-    long long length = 0;
-
-    // Get string length & num of words
-    const char* startptr = string;
-    const char* endptr = string;
-
-    while ((*startptr++) != '\0') length++;
-
-    char* result = new char[length + 1];
-    result[length] = '\0';
-    char* rptr = result;
-
-    startptr = string;
-
-    int copiedlen = 0;
-    while (true)
-    {
-        if (*startptr == '\0' && *endptr == '\0')
-            break;
-
-        if (*endptr == ' ' || *endptr == '\0')
-        {
-            int strlen = static_cast<int>(endptr - startptr);
-            // copy to result
-            while(startptr != endptr)
-                result[length - copiedlen - (endptr - startptr)] = *(startptr++);
-
-            if(copiedlen!=0)
-                result[length - copiedlen] = ' ';
-            copiedlen += strlen + 1;
-
-            if(*endptr == ' ')
-                startptr = endptr + 1;
-        }
-        endptr++;
-    }
-
-    return result;
+    return nullptr;
 }
 
 // Reverse words in a string
 std::string ReverseWordsInString(const std::string& string)
 {
-    std::stringstream ss(string);
-    std::string result;
-    std::string token;
-
-    while (std::getline(ss, token, ' '))
-        result = token + (result.empty() ? "" : " ") + result;
-
-    return result;
+    return std::string();
 }
 
 void Test0(bool useLib)
